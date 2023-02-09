@@ -1,0 +1,34 @@
+.skills-section {
+    background-color: #111;
+    color: #66BFBF;
+    padding: 60px 20px;
+}
+
+.service-card {
+    
+    padding: 0px 20px;
+    
+    margin-top: 10px;
+    transition: 0.2s ease-in;
+    border: 1px solid transparent;
+    height: 200px;
+    width: auto;
+}
+
+.service-card:hover {
+    border: 1px solid #66BFBF;
+}
+
+/* @media (max-width: 480px) {
+    .skill-image {
+        min-width: 100px;
+        max-width: 300px;
+    }
+} */
+
+
+
+.skill-icon {
+    margin: 20px;
+    font-size: 50px;
+}

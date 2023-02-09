@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kenan Abo Zaineddin">
+    <meta name="description" content="Web, Flutter, and Mobile Developer Portfolio of Kenan Abo Zaineddin">
+    <title>Kenan Abo Zaineddin | Web, Flutter, and Mobile Developer</title>
+
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <link href="css/intro.css" rel="stylesheet">
+    <link href="css/skills.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+    <link href="css/projects.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body class="h-100 text-center text-bg-dark">
+
+    <section class="intro-section">
+        <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="mb-auto">
+                <div>
+                    <h2 class="float-md-start mb-0 section-header">Kenan AZD</h2>
+                    <nav class="nav nav-masthead justify-content-center float-md-end">
+                        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#about">About</a>
+                        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#skills">Skills</a>
+                        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#projects">Projects</a>
+                        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#contact">Contact Me</a>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="px-3">
+                <div class="row intro-row align-items-center">
+                    <div class="col-md-7">
+                        <h3>Hi there! I'm a</h3>
+                        <h2 class="sentence">
+                            <span id="sentence"></span><span class="input-cursor"></span>
+                        </h2>
+                    </div>
+                    <div class="avatar col-md-5 img-fluid">
+                        <img id="avatar" src="images/myAvatar.png" alt="">
+                    </div>
+                </div>
+            </main>
+
+            <footer class="mt-auto text-white-50">
+
+            </footer>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <h1 class="section-header">About Me</h1><br>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="avatar img-fluid">
+                        <img id="avatar" src="images/myAvatar.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12-md col-lg-8 text-start py-4">
+                    <p class="fs-5">
+                        Hello! My name is <b>Kenan Abo Zaineddin</b>, I studied Information Technology Engineering in
+                        Damascus University
+                        and specialized in AI.
+                        <br><br>
+                        I started my programming journey in university and soon enough I found myself falling in love
+                        more and more with the Front-End development.
+                    </p>
+                    <ul class="text-start">
+                        <li><b>Date of Birth: </b><span>12/07/2001</span></li>
+                        <li><b>Nationality: </b><span>Syrian</span></li>
+                        <li><b>Freelance: </b><span>Available</span></li>
+                        <li><b>Spoken Languages: </b><span>Arabic and English</span></li>
+                        <li><b>Email: </b><span>example@mail.com</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="col-12">
+                <h1 class="section-header col-12">My Skills</h1><br><br>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="service-card">
+                        <i class="fa-solid fa-laptop-code skill-icon"></i>
+                        <h5>Web Development</h5>
+                        <p>Using HTML5, CSS3, Bootstrap 5 and JavaScript</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card justify-content-center">
+                        <i class="fa-solid fa-mobile skill-icon"></i>
+                        <h5>Cross-Platform<br>Apps Development</h5>
+                        <p>Using Flutter, the fastest growing cross platform UI kit</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fa-solid fa-language skill-icon"></i>
+                        <h5>Freelance Translator</h5>
+                        <p>With 2 years of experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h1 class="section-header">My Projects</h1>
+            <div class="row justify-content-center py-5">
+                <div class="project-card text col-md-3 col-sm-6 col-xs-12">
+                    <div class="card card-inverse">
+                        <img class="card-img" src="images/computer.png" alt="Card image">
+                        <div class="card-img-overlay project-card-content">
+                            <h4 class="card-title">do ToDo</h4>
+                            <p class="card-text">Flutter app to manage ToDos<br><small>Not as simple as you'd
+                                    think!</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card col-md-3 col-sm-6 col-xs-12">
+                    <div class="card card-inverse">
+                        <img class="card-img" src="images/computer.png" alt="Card image">
+                        <div class="card-img-overlay project-card-content">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card col-md-3 col-sm-6 col-xs-12">
+                    <div class="card card-inverse">
+                        <img class="card-img" src="images/computer.png" alt="Card image">
+                        <div class="card-img-overlay project-card-content">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card col-md-3 col-sm-6 col-xs-12">
+                    <div class="card card-inverse">
+                        <img class="card-img" src="images/computer.png" alt="Card image">
+                        <div class="card-img-overlay project-card-content">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <h1 class="col-12 section-header">
+                    Get in Touch
+                </h1>
+
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <!-- Contact Form start -->
+                    <div class="contact-form">
+                        <form id="contactForm" action="#" method="post">
+                            <div class="row">
+                                <div class="form-group col-md-6 col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+
+                                <div class="form-group col-md-6 col-sm-6">
+                                    <input type="email" class="form-control" placeholder="Your Email Address">
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12">
+                                    <textarea rows="4" class="form-control"
+                                        placeholder="How can i help you?"></textarea>
+                                </div>
+
+                                <div class="col-md-12 col-sm-12 text-center">
+                                    <button type="submit" class="btn-contact">Contact Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Contact Form end -->
+                    <!-- Socials -->
+                    <div class="container p-4 pb-0">
+                        <!-- Section: Social media -->
+                        <section class="mb-4">
+                            <!-- Facebook -->
+                            <a class="btn-social m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                            <!-- Google -->
+                            <a class=" btn-social m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+                            <!-- Instagram -->
+                            <a class="tn btn-social m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+                            <!-- Linkedin -->
+                            <a class=" btn-social m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+                            <!-- Github -->
+                            <a class=" btn-social m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+                        </section>
+                        <!-- Section: Social media -->
+                    </div>
+                    <!-- Socials End -->
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <footer class="footer-section text-center text-white py-5">
+        <!-- Grid container -->
+
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2023 Copyright: Kenan Abo Zaineddin
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/0de4ea4f25.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

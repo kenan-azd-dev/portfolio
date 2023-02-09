@@ -1,0 +1,32 @@
+.projects-section {
+    background-color: #151515;
+    padding: 60px 20px 60px 20px;
+}
+
+.project-card {
+    margin: 15px 0;
+}
+
+.project-card-content {
+    padding: 20px;
+    content-visibility: hidden;
+    background-color: rgba(17, 17, 17, 0);
+    
+    transition: 0.3s ease-in;
+}
+
+.project-card-content p {
+    color: white;
+}
+.project-card-content h4 {
+    color: #66BFBF;
+}
+.project-card-content:hover {
+    visibility: visible;
+    background-color: rgba(17, 17, 17, 0.8);
+    content-visibility: visible;
+}
+small {
+    color: rgba(255, 255, 255, 0.6);;
+    font-size: 0.75rem;
+}

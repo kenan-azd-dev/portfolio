@@ -1,0 +1,132 @@
+.contact-section {
+    background-color: #111;
+    padding: 60px 20px 60px 20px;
+}
+
+.contact-form .form-control {
+    background: #222;
+    border: none;
+    border-radius: 0;
+    height: auto;
+    padding: 14px 20px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    resize: none;
+    outline: 0;
+    box-shadow: none;
+    color: #fff;
+}
+
+.contact-form {
+    margin-top: 40px;
+}
+
+.btn-contact {
+    background: none;
+    display: inline-block;
+    border: 1px solid #66BFBF;
+    color: #66BFBF;
+    padding: 12px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.4s;
+}
+
+.btn-contact:hover, .btn-social:hover {
+    background: #479292;
+    color: #fff;
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    background: #222;
+    line-height: 50px;
+    color: #707070;
+    border-radius: 50%;
+    border: 1px solid #333;
+    margin: 0 6px;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+
+/*****************************************/
+/*****     Contact Information css    ****/
+/*****************************************/
+
+.contact-information {
+    background: linear-gradient(#111111 50%, #151515 50%);
+}
+
+.contact-info-single {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #333;
+    position: relative;
+}
+
+.contact-info-single:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border-top: 1px solid #66BFBF;
+    border-bottom: 1px solid #66BFBF;
+    transform: scale(0, 1);
+    transition: all 0.6s;
+}
+
+.contact-info-single:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border-left: 1px solid #66BFBF;
+    border-right: 1px solid #66BFBF;
+    transform: scale(1, 0);
+    transition: all 0.6s;
+}
+
+.contact-info-single:hover:before,
+.contact-info-single:hover:after {
+    transform: scale(1);
+}
+
+.contact-info-single h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-info-single h3:after {
+    content: '';
+    display: block;
+    width: 40px;
+    margin-left: -20px;
+    height: 3px;
+    background: #66BFBF;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+.contact-info-single p {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,16 @@
+.about-section {
+    background-color: #151515;
+    padding: 60px 20px 60px 20px;
+}
+
+.me {
+    margin: 20px;
+    border-radius: 50%;
+    min-width: 100px;
+    max-width: 300px;
+}
+
+li {
+    list-style: none;
+    margin: 5px 0 5px 0;
+}
