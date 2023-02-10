@@ -26,9 +26,9 @@ function waitForMs(ms) {
 }
 
 const carouselText = [
-    { text: "web developer"},
-    { text: "flutterer"},
-    { text: " dreamer"}
+    { text: "web developer" },
+    { text: "flutterer" },
+    { text: " dreamer" }
 ]
 
 async function carousel(carouselList, eleRef) {
@@ -45,6 +45,66 @@ async function carousel(carouselList, eleRef) {
 }
 
 carousel(carouselText, 'sentence')
+
+
+
+
+
+const scrollElements = document.querySelectorAll(".js-scroll");
+
+scrollElements.forEach((el) => {
+    el.style.opacity = 0
+})
+
+const elementInView = (el, percentageScroll = 100) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return (
+        elementTop <=
+        ((window.innerHeight || document.documentElement.clientHeight) * (percentageScroll / 100))
+    );
+};
+
+const displayScrollElement = (element) => {
+    element.classList.add("scrolled");
+};
+
+const hideScrollElement = (element) => {
+    element.classList.remove("scrolled");
+};
+const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+        if (elementInView(el, 100)) {
+            displayScrollElement(el);
+        } else {
+            hideScrollElement(el);
+        }
+    })
+}
+
+//initialize throttleTimer as false 
+let throttleTimer = false;
+const throttle = (callback, time) => {
+    //don't run the function while throttle timer is true 
+    if (throttleTimer) return;
+    
+    //first set throttle timer to true so the function doesn't run 
+    throttleTimer = true;
+    
+    setTimeout(() => {
+        //call the callback function in the setTimeout and set the throttle timer to false after the indicated time has passed 
+        callback();
+        throttleTimer = false;
+	}, time);
+}
+
+const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+window.addEventListener("scroll", () => {
+  //check if mediaQuery exists and if the value for mediaQuery does not match 'reduce', return the scrollAnimation. 
+  if (mediaQuery && !mediaQuery.matches) {
+    handleScrollAnimation()
+  }
+});
+
 
 
 /* const carouselText = [
