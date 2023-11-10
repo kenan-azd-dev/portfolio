@@ -81,53 +81,9 @@ const handleScrollAnimation = () => {
     })
 }
 
-//initialize throttleTimer as false 
-let throttleTimer = false;
-const throttle = (callback, time) => {
-    //don't run the function while throttle timer is true 
-    if (throttleTimer) return;
-    
-    //first set throttle timer to true so the function doesn't run 
-    throttleTimer = true;
-    
-    setTimeout(() => {
-        //call the callback function in the setTimeout and set the throttle timer to false after the indicated time has passed 
-        callback();
-        throttleTimer = false;
-	}, time);
-}
 
-const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-window.addEventListener("scroll", () => {
-  //check if mediaQuery exists and if the value for mediaQuery does not match 'reduce', return the scrollAnimation. 
-  if (mediaQuery && !mediaQuery.matches) {
-    handleScrollAnimation()
-  }
-});
+window.addEventListener('scroll', () => {
+    handleScrollAnimation();
+  })
 
 
-
-/* const carouselText = [
-    { text: "Apple", color: "red" },
-    { text: "Orange", color: "orange" },
-    { text: "Lemon", color: "yellow" }
-]
-
-async function carousel(carouselList, eleRef) {
-    var i = 0;
-    while (true) {
-        updateFontColor(eleRef, carouselList[i].color)
-        await typeSentence(carouselList[i].text, eleRef);
-        await waitForMs(1500);
-        await deleteSentence(eleRef);
-        await waitForMs(500);
-        i++
-        if (i >= carouselList.length) { i = 0; }
-    }
-}
-
-function updateFontColor(eleRef, color) {
-    $(eleRef).css('color', color);
-}
-
-carousel(carousel, '#sentence') */
